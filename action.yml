@@ -1,6 +1,6 @@
-name: 'Webhook Action'
+name: 'All Arguments Action Webhook'
 author: "SuCicada"
-description: 'Send a webhook event to sucicada'
+description: 'Send a webhook event to your server with all arguments what you need'
 branding:
   icon: 'alert-octagon'
   color: 'gray-dark'
