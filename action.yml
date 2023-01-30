@@ -14,6 +14,9 @@ inputs:
   job:
     description: 'must be ${{ toJSON(job) }} '
     required: true
+  github:
+    description: 'must be ${{ toJSON(github) }} '
+    required: true
   insecure:
     description: 'Enables calling to known self-signed or invalid SSL certificates'
     required: false

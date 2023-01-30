@@ -41,5 +41,5 @@ jobs:
 #          url: http://httpbin.org/anything
 #                    url: http://host.docker.internal:8180/github_action
           url: ${{ secrets.WEBHOOK_URL }}
-          job: ${{toJSON(job)}}
+          job: "${{toJSON(job)}}"
           github: "${{toJSON(github)}}"
