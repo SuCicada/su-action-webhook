@@ -2,7 +2,7 @@ name: dev
 on:
   push:
     branches:
-      - develop
+      - master
 jobs:
   dev:
     runs-on: ubuntu-latest
