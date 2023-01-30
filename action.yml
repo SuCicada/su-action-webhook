@@ -11,10 +11,10 @@ inputs:
   headers:
     description: 'Additional headers to send alongside the defaults'
     required: false
-  job:
+  job_info:
     description: 'must be ${{ toJSON(job) }} '
     required: true
-  github:
+  github_info:
     description: 'must be ${{ toJSON(github) }} '
     required: true
   insecure:

@@ -6994,8 +6994,8 @@ function run() {
             : process.env.headers
                 ? process.env.headers
                 : null;
-        const jobInfo = JSON.parse(core.getInput('job'));
-        const githubInfo = JSON.parse(core.getInput('github'));
+        const jobInfo = JSON.parse(core.getInput('job_info'));
+        const githubInfo = JSON.parse(core.getInput('github_info'));
         const body = JSON.stringify({
             env: process.env,
             github: githubInfo,
@@ -9909,7 +9909,7 @@ function fixResponseChunkedTransferBadEnding(request, errorCallback) {
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __nccwpck_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -9923,7 +9923,7 @@ function fixResponseChunkedTransferBadEnding(request, errorCallback) {
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		var threw = true;
 /******/ 		try {
@@ -9932,14 +9932,14 @@ function fixResponseChunkedTransferBadEnding(request, errorCallback) {
 /******/ 		} finally {
 /******/ 			if(threw) delete __webpack_module_cache__[moduleId];
 /******/ 		}
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__nccwpck_require__.m = __webpack_modules__;
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -9952,7 +9952,7 @@ function fixResponseChunkedTransferBadEnding(request, errorCallback) {
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/ensure chunk */
 /******/ 	(() => {
 /******/ 		__nccwpck_require__.f = {};
@@ -9965,7 +9965,7 @@ function fixResponseChunkedTransferBadEnding(request, errorCallback) {
 /******/ 			}, []));
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/get javascript chunk filename */
 /******/ 	(() => {
 /******/ 		// This function allow to reference async chunks
@@ -9974,12 +9974,12 @@ function fixResponseChunkedTransferBadEnding(request, errorCallback) {
 /******/ 			return "" + chunkId + ".index.js";
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__nccwpck_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -9990,23 +9990,23 @@ function fixResponseChunkedTransferBadEnding(request, errorCallback) {
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/compat */
-/******/ 	
+/******/
 /******/ 	if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = __dirname + "/";
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/require chunk loading */
 /******/ 	(() => {
 /******/ 		// no baseURI
-/******/ 		
+/******/
 /******/ 		// object to store loaded chunks
 /******/ 		// "1" means "loaded", otherwise not loaded yet
 /******/ 		var installedChunks = {
 /******/ 			179: 1
 /******/ 		};
-/******/ 		
+/******/
 /******/ 		// no on chunks loaded
-/******/ 		
+/******/
 /******/ 		var installChunk = (chunk) => {
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids, runtime = chunk.runtime;
 /******/ 			for(var moduleId in moreModules) {
@@ -10017,9 +10017,9 @@ function fixResponseChunkedTransferBadEnding(request, errorCallback) {
 /******/ 			if(runtime) runtime(__nccwpck_require__);
 /******/ 			for(var i = 0; i < chunkIds.length; i++)
 /******/ 				installedChunks[chunkIds[i]] = 1;
-/******/ 		
+/******/
 /******/ 		};
-/******/ 		
+/******/
 /******/ 		// require() chunk loading for javascript
 /******/ 		__nccwpck_require__.f.require = (chunkId, promises) => {
 /******/ 			// "1" is the signal for "already loaded"
@@ -10029,21 +10029,21 @@ function fixResponseChunkedTransferBadEnding(request, errorCallback) {
 /******/ 				} else installedChunks[chunkId] = 1;
 /******/ 			}
 /******/ 		};
-/******/ 		
+/******/
 /******/ 		// no external install chunk
-/******/ 		
+/******/
 /******/ 		// no HMR
-/******/ 		
+/******/
 /******/ 		// no HMR manifest
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
-/******/ 	
+/******/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module is referenced by other modules so it can't be inlined
 /******/ 	var __webpack_exports__ = __nccwpck_require__(399);
 /******/ 	module.exports = __webpack_exports__;
-/******/ 	
+/******/
 /******/ })()
 ;
