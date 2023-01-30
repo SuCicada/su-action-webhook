@@ -3,13 +3,11 @@ Thanks of https://github.com/joelwmale/webhook-action
 ```yaml
       - name: Webhook
         if: always()
-        uses: ./.
+        uses: SuCicada/su-action-webhook@latest
         with:
-#          url: http://httpbin.org/anything
-#                    url: http://host.docker.internal:8180/github_action
           url: ${{ secrets.WEBHOOK_URL }}
           job: ${{toJSON(job)}}
-          github: "${{toJSON(github)}}"
+          github: ${{toJSON(github)}}
 ```
 
 ```bash
