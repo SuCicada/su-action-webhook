@@ -1,0 +1,46 @@
+name: dev
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  dev:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        node-version: [ 16.x ]
+        stability: [ prefer-stable ]
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v1
+#      - name: Setup Node.js
+#        uses: actions/setup-node@v2
+#        with:
+#          node-version: ${{ matrix.node-version }}
+#          cache: 'yarn'
+#      - run: yarn build
+#      - name: Dump GitHub context
+#        id: github_context_step
+#        run: echo '${{ toJSON(github) }}'
+#      - name: Dump job context
+#        run: echo '${{ toJSON(job) }}'
+#      - name: Dump steps context
+#        run: echo '${{ toJSON(steps) }}'
+#      - name: Dump runner context
+#        run: echo '${{ toJSON(runner) }}'
+#      - name: Dump strategy context
+#        run: echo '${{ toJSON(strategy) }}'
+#      - name: Dump matrix context
+#        run: echo '${{ toJSON(matrix) }}'
+      - run: asdasdf
+
+      - name: Webhook
+        if: always()
+        uses: ./.
+        with:
+#          url: http://httpbin.org/anything
+#                    url: http://host.docker.internal:8180/github_action
+          url: ${{ secrets.WEBHOOK_URL }}
+          job: ${{toJSON(job)}}
+          github: "${{toJSON(github)}}"

@@ -1,0 +1,7 @@
+.idea
+*.iml
+yarn-error.log
+node_modules
+*.js.map
+src/*.js
+.env

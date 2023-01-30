@@ -1,0 +1,25 @@
+name: 'Webhook Action'
+author: "SuCicada"
+description: 'Send a webhook event to sucicada'
+branding:
+  icon: 'alert-octagon'
+  color: 'gray-dark'
+inputs:
+  url:
+    description: 'The url to send the webhook event to'
+    required: true
+  headers:
+    description: 'Additional headers to send alongside the defaults'
+    required: false
+  job:
+    description: 'must be ${{ toJSON(job) }} '
+    required: true
+  insecure:
+    description: 'Enables calling to known self-signed or invalid SSL certificates'
+    required: false
+outputs:
+  status:
+    description: 'The status of the webhook event'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
