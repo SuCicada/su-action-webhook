@@ -12,10 +12,10 @@ inputs:
     description: 'Additional headers to send alongside the defaults'
     required: false
   job_info:
-    description: 'must be ${{ toJSON(job) }} '
+    description: 'must be \$\{{ toJSON(job) }} '
     required: true
   github_info:
-    description: 'must be ${{ toJSON(github) }} '
+    description: 'must be \$\{{ toJSON(github) }} '
     required: true
   insecure:
     description: 'Enables calling to known self-signed or invalid SSL certificates'
