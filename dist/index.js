@@ -7019,8 +7019,6 @@ function run() {
                 error(res.status);
                 return;
             }
-            console.log("env---", process.env);
-            console.log(yield res.text());
         }))
             .catch(err => {
             core.info(`Error: ${err}`);

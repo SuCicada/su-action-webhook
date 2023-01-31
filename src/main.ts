@@ -57,8 +57,8 @@ async function run() {
         error(res.status)
         return
       }
-      console.log("env---", process.env)
-      console.log(await res.text())
+      // console.log("env---", process.env)
+      // console.log(await res.text())
 
     })
     .catch(err => {
